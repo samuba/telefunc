@@ -1,38 +1,335 @@
 {
-  "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.81d7c904.js",
-    "src": "renderer/_default.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_DocSearch.78acbe8a.js"
-    ]
-  },
-  "../libframe/docs/_default.page.client.ts": {
-    "file": "assets/node_modules/libframe-docs/_default.page.client.ts.d1ab34d6.js",
-    "src": "../libframe/docs/_default.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_DocSearch.78acbe8a.js"
-    ]
-  },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.8922ed8c.js",
+    "file": "assets/pages/index/index.page.client.44a313ec.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
+    "isDynamicEntry": true,
     "imports": [
-      "_DocSearch.78acbe8a.js"
-    ],
-    "css": [
-      "assets/pages/index/index.page.client.ts.5e52cf12.css"
+      "_chunk-89b08d91.js"
     ]
   },
-  "_DocSearch.78acbe8a.js": {
-    "file": "assets/DocSearch.78acbe8a.js",
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.26_vite@2.9.15/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "file": "assets/entry-client-routing.b5207db7.js",
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.26_vite@2.9.15/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-2d7decae.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "pages/Abort.page.server.mdx?extractStyles&lang.mdx",
+      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractStyles&lang.mdx",
+      "pages/abort-shield.page.server.mdx?extractStyles&lang.mdx",
+      "pages/abort-vs-error.page.server.mdx?extractStyles&lang.mdx",
+      "pages/auth.page.server.mdx?extractStyles&lang.mdx",
+      "pages/config.page.server.mdx?extractStyles&lang.mdx",
+      "pages/createTelefuncCaller.page.server.mdx?extractStyles&lang.mdx",
+      "pages/error-handling.page.server.mdx?extractStyles&lang.mdx",
+      "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx",
+      "pages/file-structure.page.server.mdx?extractStyles&lang.mdx",
+      "pages/file-upload.page.server.mdx?extractStyles&lang.mdx",
+      "pages/form-validation.page.server.mdx?extractStyles&lang.mdx",
+      "pages/getContext.page.server.mdx?extractStyles&lang.mdx",
+      "pages/index/index.page.server.tsx?extractStyles&lang.tsx",
+      "pages/install.page.server.mdx?extractStyles&lang.mdx",
+      "pages/isomorphic-import.page.server.mdx?extractStyles&lang.mdx",
+      "pages/next.page.server.mdx?extractStyles&lang.mdx",
+      "pages/nuxt.page.server.mdx?extractStyles&lang.mdx",
+      "pages/permissions.page.server.mdx?extractStyles&lang.mdx",
+      "pages/provideTelefuncContext.page.server.mdx?extractStyles&lang.mdx",
+      "pages/shield.page.server.mdx?extractStyles&lang.mdx",
+      "pages/ssr-context.page.server.mdx?extractStyles&lang.mdx",
+      "pages/ssr.page.server.mdx?extractStyles&lang.mdx",
+      "pages/telefunc-server.page.server.mdx?extractStyles&lang.mdx",
+      "pages/tour.page.server.mdx?extractStyles&lang.mdx",
+      "pages/typescript.page.server.mdx?extractStyles&lang.mdx",
+      "pages/vite.page.server.mdx?extractStyles&lang.mdx",
+      "pages/waterfalls.page.server.mdx?extractStyles&lang.mdx",
+      "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+    ]
+  },
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.26_vite@2.9.15/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "file": "assets/entry-server-routing.d1fb8280.js",
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.26_vite@2.9.15/node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-2d7decae.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "pages/Abort.page.server.mdx?extractStyles&lang.mdx",
+      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractStyles&lang.mdx",
+      "pages/abort-shield.page.server.mdx?extractStyles&lang.mdx",
+      "pages/abort-vs-error.page.server.mdx?extractStyles&lang.mdx",
+      "pages/auth.page.server.mdx?extractStyles&lang.mdx",
+      "pages/config.page.server.mdx?extractStyles&lang.mdx",
+      "pages/createTelefuncCaller.page.server.mdx?extractStyles&lang.mdx",
+      "pages/error-handling.page.server.mdx?extractStyles&lang.mdx",
+      "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx",
+      "pages/file-structure.page.server.mdx?extractStyles&lang.mdx",
+      "pages/file-upload.page.server.mdx?extractStyles&lang.mdx",
+      "pages/form-validation.page.server.mdx?extractStyles&lang.mdx",
+      "pages/getContext.page.server.mdx?extractStyles&lang.mdx",
+      "pages/index/index.page.server.tsx?extractStyles&lang.tsx",
+      "pages/install.page.server.mdx?extractStyles&lang.mdx",
+      "pages/isomorphic-import.page.server.mdx?extractStyles&lang.mdx",
+      "pages/next.page.server.mdx?extractStyles&lang.mdx",
+      "pages/nuxt.page.server.mdx?extractStyles&lang.mdx",
+      "pages/permissions.page.server.mdx?extractStyles&lang.mdx",
+      "pages/provideTelefuncContext.page.server.mdx?extractStyles&lang.mdx",
+      "pages/shield.page.server.mdx?extractStyles&lang.mdx",
+      "pages/ssr-context.page.server.mdx?extractStyles&lang.mdx",
+      "pages/ssr.page.server.mdx?extractStyles&lang.mdx",
+      "pages/telefunc-server.page.server.mdx?extractStyles&lang.mdx",
+      "pages/tour.page.server.mdx?extractStyles&lang.mdx",
+      "pages/typescript.page.server.mdx?extractStyles&lang.mdx",
+      "pages/vite.page.server.mdx?extractStyles&lang.mdx",
+      "pages/waterfalls.page.server.mdx?extractStyles&lang.mdx",
+      "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+    ]
+  },
+  "_chunk-89b08d91.js": {
+    "file": "assets/chunk-89b08d91.js"
+  },
+  "_chunk-2d7decae.js": {
+    "file": "assets/chunk-2d7decae.js"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.client.ts": {
+    "file": "assets/chunk-bda81f83.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.client.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-89b08d91.js"
+    ],
     "css": [
-      "assets/DocSearch.21fd2831.css"
+      "assets/_default.page.client.ec987e6f.css",
+      "assets/P.8c851859.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
+    ]
+  },
+  "pages/Abort.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab9.js",
+    "src": "pages/Abort.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f25019.js",
+    "src": "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/abort-shield.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250192.js",
+    "src": "pages/abort-shield.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/abort-vs-error.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250193.js",
+    "src": "pages/abort-vs-error.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/auth.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250194.js",
+    "src": "pages/auth.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/config.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab92.js",
+    "src": "pages/config.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/createTelefuncCaller.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab93.js",
+    "src": "pages/createTelefuncCaller.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/error-handling.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250195.js",
+    "src": "pages/error-handling.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab94.js",
+    "src": "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/file-structure.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250196.js",
+    "src": "pages/file-structure.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/file-upload.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab95.js",
+    "src": "pages/file-upload.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/form-validation.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250197.js",
+    "src": "pages/form-validation.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/getContext.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab96.js",
+    "src": "pages/getContext.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/index/index.page.server.tsx?extractStyles&lang.tsx": {
+    "file": "assets/chunk-c29ec61b.js",
+    "src": "pages/index/index.page.server.tsx?extractStyles&lang.tsx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index.page.server.45d3ba35.css",
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/install.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250198.js",
+    "src": "pages/install.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/isomorphic-import.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab97.js",
+    "src": "pages/isomorphic-import.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/next.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f250199.js",
+    "src": "pages/next.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/nuxt.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501910.js",
+    "src": "pages/nuxt.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/permissions.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501911.js",
+    "src": "pages/permissions.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/provideTelefuncContext.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab98.js",
+    "src": "pages/provideTelefuncContext.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/shield.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501912.js",
+    "src": "pages/shield.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/ssr-context.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501913.js",
+    "src": "pages/ssr-context.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/ssr.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501914.js",
+    "src": "pages/ssr.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/telefunc-server.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab99.js",
+    "src": "pages/telefunc-server.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/tour.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501915.js",
+    "src": "pages/tour.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/typescript.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501916.js",
+    "src": "pages/typescript.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/vite.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501917.js",
+    "src": "pages/vite.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/waterfalls.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab910.js",
+    "src": "pages/waterfalls.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
+    "file": "assets/chunk-1ad2bff5.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.36_sfoxds7t5ydpegc3knd667wn6m/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/_default.page.server.f871bfbc.css"
     ]
   }
 }
