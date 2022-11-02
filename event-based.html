@@ -83,11 +83,10 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <p>By default, we recommend to prefix all telefunction names with <code>&quot;on&quot;</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">    TELEFUNCTION NAME</span></span>
 <span class="line"><span style="color:#24292F">    =================</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Generic telefunction</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Generic telefunction:</span></span>
 <span class="line"><span style="color:#24292F">❌  updateTodoItem</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Tailored telefunction reacting to a specific user event</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Tailored telefunction reacting to a specific user event:</span></span>
 <span class="line"><span style="color:#24292F">✅  onTodoItemTextUpdate</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Tailored telefunction reacting to a specific user event</span></span>
 <span class="line"><span style="color:#24292F">✅  onTodoItemCompleteToggle</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Data-fetching telefunction</span></span>
@@ -108,18 +107,17 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">✅  pages/edit/Page.telefunc.js</span></span>
 <span class="line"><span style="color:#24292F">❌  pages/edit/all.telefunc.js</span></span></code></pre></div>
 <p>To foster event-based telefunctions, Telefunc displays a warning whenever the naming convention isn&#x27;t followed.</p>
+<p>We can use <code>disableNamingConvention</code> to disable the warnings:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { telefuncConfig } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
+<span class="line"><span style="color:#24292F">telefunc.disableNamingConvention </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span></code></pre></div>
 <blockquote>
 <p>First-time Telefunc users often create generic telefunctions out of the habit of using REST/GraphQL, but defining tailored telefunctions instead is usually the better appraoch as explained above.</p>
 </blockquote>
-<p>We can use <code>disableNamingConvention</code> to disable the warnings:</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { telefuncConfig } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
-<span class="line"><span style="color:#24292F">telefunc.disableNamingConvention </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span></code></pre></div>
 <h2 id="exceptions">Exceptions</h2>
 <p>We recommend implementing telefunctions that are tailored instead of generic, as explained above.</p>
 <p>But there are exceptions.</p>
-<p>The most common one is if our telefunctions are cosumed not only by one client but by several clients and if these clients are deployed independently of each other. In that case it can make sense to define few generic telefunctions covering all clients at once instead of defining different telefunctions for each client (it then also make sense to not respect the naming convention).</p>
+<p>The most common one is if our telefunctions are consumed not only by one client but by several clients, and if these clients are deployed independently of each other. In that case it can make sense to define few generic telefunctions covering all clients at once instead of defining different telefunctions for each client.</p>
 <blockquote>
 <p>An alternative is to deploy one Telefunc server per client; that way we preserve the fast development speed of tailored telefunctions.</p>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/event-based.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
