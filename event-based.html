@@ -109,8 +109,8 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <p>To foster event-based telefunctions, Telefunc displays a warning whenever the naming convention isn&#x27;t followed.</p>
 <p>We can use <code>disableNamingConvention</code> to disable the warnings:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { telefuncConfig } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
-<span class="line"><span style="color:#24292F">telefunc.disableNamingConvention </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { config } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
+<span class="line"><span style="color:#24292F">config.disableNamingConvention </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span></code></pre></div>
 <blockquote>
 <p>First-time Telefunc users often create generic telefunctions out of the habit of using REST/GraphQL, but defining tailored telefunctions instead is usually the better appraoch as explained above.</p>
 </blockquote>
