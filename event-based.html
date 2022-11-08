@@ -15,15 +15,14 @@
 <li>Generic</li>
 <li>Backend-owned</li>
 </ul>
-<p>With Telefunc, it&#x27;s the exact opposite as telefunctions are:</p>
+<p>With Telefunc, it&#x27;s usually the exact opposite because telefunctions are usually:</p>
 <ul>
 <li>Tailored</li>
 <li>Frontend-owned</li>
 </ul>
-<p>This inversion leads to profound improvements in development speed.</p>
-<p>That&#x27;s why we recommend to implement what we call <em>event-based telefunctions</em>.</p>
+<p>This inversion leads to profound improvements in development speed, and we recommend to implement what we call <em>event-based telefunctions</em>.</p>
 <blockquote>
-<p>You may be tempted to create generic telefunctions but this is an anti-pattern as explained below.</p>
+<p>You may be tempted to create generic telefunctions but this is usually an anti-pattern as explained in the example below.</p>
 </blockquote>
 <h2 id="example">Example</h2>
 <p>Let&#x27;s imagine a to-do app that wants to implement a new feature &quot;mark all tasks as completed&quot;.</p>
@@ -38,7 +37,7 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <blockquote>
 <p>It&#x27;s usually the backend team that owns and is responsible of implementing and modelling such API.</p>
 </blockquote>
-<p>With Telefunc, the app calls a telefunction like this instead:</p>
+<p>With Telefunc, we can do this instead:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// TodoList.telefunc.ts</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Server</span></span>
 <span class="line"></span>
@@ -53,34 +52,36 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">    },</span></span>
 <span class="line"><span style="color:#24292F">    data: {</span></span>
 <span class="line"><span style="color:#24292F">      completed: </span><span style="color:#0550AE">true</span></span>
-<span class="line"><span style="color:#24292F">    },</span></span>
+<span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  })</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <blockquote>
 <p>With Telefunc, it&#x27;s the frontend team that owns and is responsible for defining telefunctions.</p>
 </blockquote>
-<p>The key difference is that our telefunction <code>onMarkAllAsCompleted()</code> is created specifically to serve the needs of the component <code>TodoList.tsx</code>, whereas the RESTful API is a set of generic endpoints that are agnositc to the frontend.</p>
-<blockquote>
-<p>This key difference enables a much faster development speed. That&#x27;s why we recommend to implement telefunctions that are tailored instead of generic. There are exception to this recommendation which we elaborate below.</p>
-</blockquote>
-<p>In our example, we named our telefunction <code>&quot;onMarkAllAsCompleted&quot;</code> because it&#x27;s triggered by a user event:</p>
+<p>The key difference is that our telefunction <code>onMarkAllAsCompleted()</code> is created specifically to serve the needs of our component <code>TodoList.tsx</code>, whereas the RESTful API is a set of generic endpoints that are agnostic to the frontend.</p>
+<p>Not only is <code>onMarkAllAsCompleted()</code> more performant than using RESTful API, but it&#x27;s also faster to implement such tailored telefunction as the need arises while developing the frontend, instead of having to implement an entire RESTful API before even getting started writing the frontend.</p>
+<p>That&#x27;s why, in general, we recommend to implement telefunctions that are tailored instead of generic.</p>
+<p>We named our telefunction &quot;onMarkAllAsCompleted&quot; instead of &quot;markAllAsCompleted&quot; because it&#x27;s triggered by a user event:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="tsx" data-theme="default"><code data-language="tsx" data-theme="default"><span class="line"><span style="color:#6E7781">// TodoList.tsx</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { onMarkAllAsCompleted } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./TodoList.telefunc.ts&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">TodoList</span><span style="color:#24292F">() {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;&gt;</span></span>
-<span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">button</span><span style="color:#24292F"> </span><span style="color:#0550AE">onClick</span><span style="color:#CF222E">=</span><span style="color:#24292F">{ </span><span style="color:#CF222E">async</span><span style="color:#24292F"> () </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">onMarkAllAsCompleted</span><span style="color:#24292F">() }&gt;</span></span>
-<span class="line"><span style="color:#24292F">      Mark all as completed</span></span>
-<span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;</span></span>
-<span class="line"><span style="color:#24292F">    {</span><span style="color:#6E7781">/* ... */</span><span style="color:#24292F">}</span></span>
-<span class="line"><span style="color:#24292F">  &lt;/&gt;</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> (</span></span>
+<span class="line"><span style="color:#24292F">    &lt;&gt;</span></span>
+<span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">button</span></span>
+<span class="line"><span style="color:#24292F">        </span><span style="color:#0550AE">onClick</span><span style="color:#CF222E">=</span><span style="color:#24292F">{</span><span style="color:#CF222E">async</span><span style="color:#24292F"> () </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">onMarkAllAsCompleted</span><span style="color:#24292F">()}</span></span>
+<span class="line"><span style="color:#24292F">      &gt;</span></span>
+<span class="line"><span style="color:#24292F">        Mark all as completed</span></span>
+<span class="line"><span style="color:#24292F">      &lt;/</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;</span></span>
+<span class="line"><span style="color:#24292F">      {</span><span style="color:#6E7781">/* ... */</span><span style="color:#24292F">}</span></span>
+<span class="line"><span style="color:#24292F">    &lt;/&gt;</span></span>
+<span class="line"><span style="color:#24292F">  )</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>While defining telefunctions tailored to serve the needs of a UI commponent, we soon realize that telefunctions are always triggered by some kind of event.</p>
-<p>That&#x27;s why we recommend to start all telefunction names with <code>&quot;on&quot;</code>:</p>
 <h2 id="naming-convention">Naming convention</h2>
-<p>By default, we recommend to prefix all telefunction names with <code>&quot;on&quot;</code>:</p>
+<p>By default, we recommend to prefix all telefunction names with &quot;on&quot;:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">    TELEFUNCTION NAME</span></span>
 <span class="line"><span style="color:#24292F">    =================</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Generic telefunction:</span></span>
@@ -106,21 +107,13 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">    pages/edit/Page.vue</span></span>
 <span class="line"><span style="color:#24292F">✅  pages/edit/Page.telefunc.js</span></span>
 <span class="line"><span style="color:#24292F">❌  pages/edit/all.telefunc.js</span></span></code></pre></div>
-<p>To foster event-based telefunctions, Telefunc displays a warning whenever the naming convention isn&#x27;t followed.</p>
-<p>We can use <code>disableNamingConvention</code> to disable the warnings:</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { config } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
-<span class="line"><span style="color:#24292F">config.disableNamingConvention </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span></code></pre></div>
+<p>Telefunc displays a warning whenever the naming convention isn&#x27;t followed. We can opt-out with <a href="/disableNamingConvention"><code>config.disableNamingConvention</code></a>, but we recommend that you carefully consider whether you really want to opt-out.</p>
 <blockquote>
-<p>First-time Telefunc users often create generic telefunctions out of the habit of using REST/GraphQL, but defining tailored telefunctions instead is usually the better appraoch as explained above.</p>
+<p>First-time Telefunc users often create generic telefunctions out of the habit of using REST/GraphQL, but defining tailored telefunctions instead is usually the better appraoch.</p>
 </blockquote>
 <h2 id="exceptions">Exceptions</h2>
-<p>We recommend implementing telefunctions that are tailored instead of generic, as explained above.</p>
-<p>But there are exceptions.</p>
-<p>The most common one is if our telefunctions are consumed not only by one client but by several clients, and if these clients are deployed independently of each other. In that case it can make sense to define few generic telefunctions covering all clients at once instead of defining different telefunctions for each client.</p>
-<blockquote>
-<p>An alternative is to deploy one Telefunc server per client; that way we preserve the fast development speed of tailored telefunctions.</p>
-</blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/event-based.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<p>As explained above, we recommend implementing telefunctions that are tailored instead of generic, but there are exceptions.</p>
+<p>The most common exception is if our telefunctions are consumed not only by one client but by several clients, and if these clients are deployed independently of each other. In that case it can make sense to define few generic telefunctions covering all clients, instead of defining different telefunctions for each client. An alternative is to deploy one Telefunc server per client; that way we can preserve the fast development speed of tailored telefunctions.</p><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/event-based.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
       <script type="module" src="/assets/chunk-f9350749.js" async></script><link rel="preload" href="/assets/chevron.38e8d76a.svg" as="image" type="image/svg+xml"></body>
     </html>

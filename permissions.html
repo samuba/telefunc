@@ -22,7 +22,7 @@
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onTextChange</span><span style="color:#24292F">(</span><span style="color:#953800">id</span><span style="color:#CF222E">:</span><span style="color:#24292F"> </span><span style="color:#0550AE">string</span><span style="color:#24292F">, </span><span style="color:#953800">text</span><span style="color:#CF222E">:</span><span style="color:#24292F"> </span><span style="color:#0550AE">string</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">user</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">getContext</span><span style="color:#24292F">()</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">user) {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We return `notLoggedIn: true` so that frontend can redirect the user to the login page</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We return `notLoggedIn: true` so that the frontend can redirect the user to the login page</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> { notLoggedIn: </span><span style="color:#0550AE">true</span><span style="color:#24292F"> }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
@@ -32,15 +32,15 @@
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">throw</span><span style="color:#24292F"> </span><span style="color:#8250DF">Abort</span><span style="color:#24292F">()</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Easy implementation of advanced permissions such as &quot;only allow</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// the author or admins to modify a to-do item&quot;.</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// We can easily programmatically implement advanced permissions such</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// as &quot;only allow the author or admins to modify a to-do item&quot;.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (todoItem.authorId </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> user.id </span><span style="color:#CF222E">&amp;&amp;</span><span style="color:#24292F"> </span><span style="color:#CF222E">!</span><span style="color:#24292F">user.isAdmin) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">throw</span><span style="color:#24292F"> </span><span style="color:#8250DF">Abort</span><span style="color:#24292F">()</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">await</span><span style="color:#24292F"> todoItem.</span><span style="color:#8250DF">update</span><span style="color:#24292F">({ text })</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>In general, we use <code>throw Abort()</code> upon permission denials but, sometimes, the frontend needs to know why the the telefunction call failed:
-in this example we return <code>{ notLoggedIn: true }</code> instead of <code>throw Abort()</code> so that the frontend can perform a redirection.</p>
+in this example we return <code>{ notLoggedIn: true }</code> instead of <code>throw Abort()</code> so that the frontend can perform a redirection:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="tsx" data-theme="default"><code data-language="tsx" data-theme="default"><span class="line"><span style="color:#6E7781">// TodoItem.tsx</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
 <span class="line"></span>
@@ -58,7 +58,7 @@ in this example we return <code>{ notLoggedIn: true }</code> instead of <code>th
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;</span><span style="color:#116329">input</span><span style="color:#24292F"> </span><span style="color:#0550AE">input</span><span style="color:#CF222E">=</span><span style="color:#0A3069">&quot;text&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">value</span><span style="color:#CF222E">=</span><span style="color:#24292F">{text} </span><span style="color:#0550AE">onChange</span><span style="color:#CF222E">=</span><span style="color:#24292F">{(</span><span style="color:#953800">ev</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#8250DF">onChange</span><span style="color:#24292F">(id, ev.target.value)} /&gt;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <h2 id="getcontext-wrapping"><code>getContext()</code> wrapping</h2>
-<p>To implement a permission once and re-use it, we can use a <code>getContext()</code> wrapper:</p>
+<p>To implement permission logic once and re-use it, we can define a <code>getContext()</code> wrapper:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// components/TodoItem.telefunc.ts</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Server</span></span>
 <span class="line"></span>
@@ -73,7 +73,7 @@ in this example we return <code>{ notLoggedIn: true }</code> instead of <code>th
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// auth/getUser.ts</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Note that getUser() isn&#x27;t a telefunction: it&#x27;s just a little wrapper around getContext()</span></span>
+<span class="line"><span style="color:#6E7781">// Note that getUser() isn&#x27;t a telefunction: it&#x27;s a wrapper around getContext()</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { getUser }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { getContext, Abort } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
