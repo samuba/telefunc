@@ -17,13 +17,10 @@ You may need experience with Telefunc (or RPC) before being able to fully intern
 </blockquote>
 <h2 id="server-side-calls-vs-browser-side-calls">Server-side calls VS browser-side calls</h2>
 <p>We usually call telefunctions remotely from the browser:</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// CreateTodo.telefunc.js</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// CreateTodo.telefunc.ts</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js server</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { shield } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#8250DF">shield</span><span style="color:#24292F">(onNewTodo, [shield.type.string])</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onNewTodo</span><span style="color:#24292F">(</span><span style="color:#953800">text</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onNewTodo</span><span style="color:#24292F">(</span><span style="color:#953800">text</span><span style="color:#CF222E">:</span><span style="color:#24292F"> </span><span style="color:#0550AE">string</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">todoItem</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">new</span><span style="color:#24292F"> </span><span style="color:#8250DF">Todo</span><span style="color:#24292F">({ text })</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">await</span><span style="color:#24292F"> todoItem.</span><span style="color:#8250DF">save</span><span style="color:#24292F">()</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
