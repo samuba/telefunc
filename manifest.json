@@ -51,10 +51,6 @@
     "file": "assets/telefunc-favicon.6013bce0.svg",
     "src": "icons/telefunc-favicon.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
-    "file": "assets/chevron.52d9d856.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/features/chevron.svg"
-  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/icons/heart.svg": {
     "file": "assets/heart.5f8efb01.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/icons/heart.svg"
@@ -86,6 +82,10 @@
   "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/Sponsors/label.svg": {
     "file": "assets/label.524acbe5.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/Sponsors/label.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
+    "file": "assets/chevron.52d9d856.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/components/features/chevron.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
     "file": "assets/chevron.38e8d76a.svg",
@@ -477,20 +477,20 @@
     "file": "assets/_default.page.client.2a70f547.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
   },
-  "FeatureList.css": {
-    "file": "assets/FeatureList.a95a6883.css",
-    "src": "FeatureList.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.8fa1a7c1.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
-  },
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
   },
+  "FeatureList.css": {
+    "file": "assets/FeatureList.a95a6883.css",
+    "src": "FeatureList.css"
+  },
   "pages/index/index.page.server.tsx?extractStyles&lang.css": {
     "file": "assets/pages/index/index.page.server.6c2d1ceb.css",
     "src": "pages/index/index.page.server.tsx?extractStyles&lang.css"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.8fa1a7c1.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   }
 }
