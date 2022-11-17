@@ -484,24 +484,24 @@
       "assets/chevron.38e8d76a.svg"
     ]
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.2a70f547.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
-  },
-  "P.css": {
-    "file": "assets/P.59ef0673.css",
-    "src": "P.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.8fa1a7c1.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   },
   "pages/index/index.page.server.tsx?extractStyles&lang.css": {
     "file": "assets/pages/index/index.page.server.6c2d1ceb.css",
     "src": "pages/index/index.page.server.tsx?extractStyles&lang.css"
   },
+  "P.css": {
+    "file": "assets/P.59ef0673.css",
+    "src": "P.css"
+  },
   "FeatureList.css": {
     "file": "assets/FeatureList.a95a6883.css",
     "src": "FeatureList.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.8fa1a7c1.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.2a70f547.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.8_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
   }
 }
