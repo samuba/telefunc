@@ -17,8 +17,8 @@
 as explained in <a href="/RPC">RPC</a>,
 telefunctions are public and need protection.</p>
 <h2 id="typescript">TypeScript</h2>
-<p>If we use TypeScript, then Telefunc automatically generates a <code>shield()</code> for each telefunction.</p>
-<p>In other words, Telefunc automatically checks the argument types at runtime:</p>
+<p>If we use TypeScript, then Telefunc automatically generates <code>shield()</code> for each telefunction.</p>
+<p>In other words: telefunction argument types are automatically validated at runtime:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// hello.telefunc.ts</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// We don&#x27;t need to define a shield() when using TypeScript: Telefunc automatically generates</span></span>
@@ -32,7 +32,7 @@ telefunctions are public and need protection.</p>
 <p>Telefunc&#x27;s automatic <code>shield()</code> generation only works for stacks that transpile server-side code (Next.js, Vite, vite-plugin-ssr, SvelteKit, Nuxt, etc.).</p>
 <p>For stacks that don&#x27;t transpile server-side code (e.g. React Native, CRA, Parcel), we need to define <code>shield()</code> manually ourselves.</p>
 </blockquote>
-<p>If we define <code>shield()</code> manually (instead of using Telefunc&#x27;s automatic <code>shield()</code> generator), then note we can use <code>shield()</code> to infer types:</p>
+<p>If we define <code>shield()</code> manually (instead of using Telefunc&#x27;s automatic <code>shield()</code> generator), then we can use <code>shield()</code> to infer types:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { shield } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">onNewTodo</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">shield</span><span style="color:#24292F">(</span></span>
