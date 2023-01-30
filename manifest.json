@@ -24,7 +24,7 @@
     ]
   },
   "../node_modules/.pnpm/vite-plugin-ssr@0.4.69_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8030cf98.js",
+    "file": "assets/entry-client-routing.9312f8a1.js",
     "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.69_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -45,6 +45,7 @@
       "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
       "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
       "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
       "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
       "pages/install.page.server.mdx?extractAssets&lang.mdx",
       "pages/next.page.server.mdx?extractAssets&lang.mdx",
@@ -60,6 +61,7 @@
       "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
       "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
       "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
       "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
       "pages/vite.page.server.mdx?extractAssets&lang.mdx",
       "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
@@ -67,7 +69,7 @@
     ]
   },
   "../node_modules/.pnpm/vite-plugin-ssr@0.4.69_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.176db017.js",
+    "file": "assets/entry-server-routing.bf270ae7.js",
     "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.69_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -88,6 +90,7 @@
       "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
       "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
       "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
       "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
       "pages/install.page.server.mdx?extractAssets&lang.mdx",
       "pages/next.page.server.mdx?extractAssets&lang.mdx",
@@ -103,6 +106,7 @@
       "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
       "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
       "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
       "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
       "pages/vite.page.server.mdx?extractAssets&lang.mdx",
       "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
@@ -183,93 +187,103 @@
       "assets/index.page.server.6c2d1ceb.css"
     ]
   },
-  "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx": {
+  "pages/initial-data.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/chunk-87797ab913.js",
+    "src": "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/chunk-87797ab914.js",
     "src": "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/install.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab914.js",
+    "file": "assets/chunk-87797ab915.js",
     "src": "pages/install.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/next.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab915.js",
+    "file": "assets/chunk-87797ab916.js",
     "src": "pages/next.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/nuxt.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab916.js",
+    "file": "assets/chunk-87797ab917.js",
     "src": "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/onAbort.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab917.js",
+    "file": "assets/chunk-87797ab918.js",
     "src": "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/onBug.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab918.js",
+    "file": "assets/chunk-87797ab919.js",
     "src": "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/permissions.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab919.js",
+    "file": "assets/chunk-87797ab920.js",
     "src": "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/react-native.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab920.js",
+    "file": "assets/chunk-87797ab921.js",
     "src": "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/root.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab921.js",
+    "file": "assets/chunk-87797ab922.js",
     "src": "pages/root.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/shield.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab922.js",
+    "file": "assets/chunk-87797ab923.js",
     "src": "pages/shield.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab923.js",
+    "file": "assets/chunk-87797ab924.js",
     "src": "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/telefunc.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab924.js",
+    "file": "assets/chunk-87797ab925.js",
     "src": "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab925.js",
+    "file": "assets/chunk-87797ab926.js",
     "src": "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab926.js",
+    "file": "assets/chunk-87797ab927.js",
     "src": "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/transformer.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab927.js",
+    "file": "assets/chunk-87797ab928.js",
     "src": "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
+  "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/chunk-87797ab929.js",
+    "src": "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
+    "isDynamicEntry": true
+  },
   "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab928.js",
+    "file": "assets/chunk-87797ab930.js",
     "src": "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vite.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab929.js",
+    "file": "assets/chunk-87797ab931.js",
     "src": "pages/vite.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunk-87797ab930.js",
+    "file": "assets/chunk-87797ab932.js",
     "src": "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
     "isDynamicEntry": true
   },
