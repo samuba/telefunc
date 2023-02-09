@@ -25,7 +25,7 @@
 <p>This inversion leads to a significantly faster development speed.</p>
 <p>You may be tempted to create generic telefunctions out of the habit of using REST/GraphQL, but this is usually an anti-pattern as explained in the example below. Instead, we recommend to implement what we call <em>event-based telefunctions</em>.</p>
 <h2 id="example">Example</h2>
-<p>Let&#x27;s imagine a to-do app that wants to implement a new feature &quot;mark all tasks as completed&quot;.</p>
+<p>Let&#x27;s imagine a to-do list app that wants to implement a new feature &quot;mark all tasks as completed&quot;.</p>
 <p>With a RESTful API, the app typically does these requests:</p>
 <pre><code>HTTP VERB       HTTP URL                                      HTTP BODY PAYLOAD
 =========       =========================================     =====================
@@ -57,12 +57,12 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">  })</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <blockquote>
-<p>With Telefunc, it&#x27;s the frontend team that owns and is responsible for defining telefunctions.</p>
+<p>It&#x27;s usually the frontend team that owns and is responsible for defining such telefunction.</p>
 </blockquote>
 <p>The key difference is that our telefunction <code>onMarkAllAsCompleted()</code> is created specifically to serve the needs of our component <code>TodoList.tsx</code>, whereas a RESTful API is a set of generic endpoints that are agnostic to our frontend.</p>
-<p>Not only is it more performant, but it&#x27;s also faster to implement tailored telefunction as the need arises instead of having to implement an entire RESTful API before even starting developing the frontend.</p>
-<p>That&#x27;s why, in general, we recommend implementing telefunctions that are tailored instead of generic.</p>
-<p>We named our telefunction &quot;onMarkAllAsCompleted&quot; instead of &quot;markAllAsCompleted&quot; because it&#x27;s triggered by a user event:</p>
+<p>Not only is it more performant, but it&#x27;s also faster to implement tailored telefunctions as the need arises – instead of having to implement an entire RESTful API before even getting started with the development of the frontend.</p>
+<p>Thus, in general, we recommend implementing telefunctions that are tailored instead of generic.</p>
+<p>We named our telefunction &quot;onMarkAllAsCompleted&quot; (instead of &quot;markAllAsCompleted&quot;) because it&#x27;s triggered by a user event:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="tsx" data-theme="default"><code data-language="tsx" data-theme="default"><span class="line"><span style="color:#6E7781">// TodoList.tsx</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
 <span class="line"></span>
@@ -80,7 +80,7 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">    &lt;/&gt;</span></span>
 <span class="line"><span style="color:#24292F">  )</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>When defining telefunctions tailored to serve the needs of UI commponents, we soon realize that telefunctions are usually triggered by some kind of event.</p>
+<p>When defining telefunctions tailored to serve the needs of UI commponents, we soon realize that telefunctions are usually triggered by a user event.</p>
 <h2 id="naming-convention">Naming convention</h2>
 <p>By default, we recommend to prefix all telefunction names with &quot;on&quot;:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">    TELEFUNCTION NAME</span></span>
