@@ -59,8 +59,8 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <blockquote>
 <p>With Telefunc, it&#x27;s the frontend team that owns and is responsible for defining telefunctions.</p>
 </blockquote>
-<p>The key difference is that our telefunction <code>onMarkAllAsCompleted()</code> is created specifically to serve the needs of our component <code>TodoList.tsx</code>, whereas the RESTful API is a set of generic endpoints that are agnostic to our frontend.</p>
-<p>Not only is it more performant, but it&#x27;s also faster to implement tailored telefunction as the need arises instead of having to implement an entire RESTful API before even getting started developing the frontend.</p>
+<p>The key difference is that our telefunction <code>onMarkAllAsCompleted()</code> is created specifically to serve the needs of our component <code>TodoList.tsx</code>, whereas a RESTful API is a set of generic endpoints that are agnostic to our frontend.</p>
+<p>Not only is it more performant, but it&#x27;s also faster to implement tailored telefunction as the need arises instead of having to implement an entire RESTful API before even starting developing the frontend.</p>
 <p>That&#x27;s why, in general, we recommend implementing telefunctions that are tailored instead of generic.</p>
 <p>We named our telefunction &quot;onMarkAllAsCompleted&quot; instead of &quot;markAllAsCompleted&quot; because it&#x27;s triggered by a user event:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="tsx" data-theme="default"><code data-language="tsx" data-theme="default"><span class="line"><span style="color:#6E7781">// TodoList.tsx</span></span>
@@ -91,7 +91,7 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <span class="line"><span style="color:#24292F">✅  onTodoItemTextUpdate</span></span>
 <span class="line"><span style="color:#24292F">✅  onTodoItemCompleteToggle</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">❌  </span><span style="color:#6E7781"># Data-fetching telefunction</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781"># Data-fetching telefunction</span></span>
 <span class="line"><span style="color:#24292F">❌  loadData</span></span>
 <span class="line"><span style="color:#24292F">✅  onLoad</span></span>
 <span class="line"><span style="color:#24292F">✅  onPagination</span></span>
