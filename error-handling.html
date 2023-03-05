@@ -82,6 +82,7 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>We can also use <code>throw Abort(someValue)</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { validate } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-library&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { Abort } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onFromSubmit</span><span style="color:#24292F">(</span><span style="color:#953800">data</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">try</span><span style="color:#24292F"> {</span></span>
@@ -94,7 +95,7 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
 <blockquote>
-<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation">Guides<!-- --> &gt; <!-- -->Form validation</a>.</p>
+<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation#throw-abort">Guides<!-- --> &gt; <!-- -->Form validation<!-- --> &gt; <!-- -->Throw abort</a>.</p>
 </blockquote>
 <blockquote>
 <p>We need to catch the error and use <code>throw Abort(someValue)</code> because Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend (in order to avoid leaking sensitive information).</p>
