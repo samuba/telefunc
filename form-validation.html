@@ -63,14 +63,15 @@
 <p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code> because:</p>
 <ol>
 <li>It makes the code&#x27;s intent clearer: the reader of our code knows that <code>return someValue</code> is an expected case that will be handled by the frontend, whereas when throwing an error it isn&#x27;t obvious whether/where/how the error will be handled by the frontend.</li>
-<li><code>return someValue</code> has better TypeScript DX, as TypeScript doesn&#x27;t typecheck catched errors:</li>
-</ol>
+<li><code>return someValue</code> has better TypeScript DX, as TypeScript doesn&#x27;t typecheck catched errors:<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#CF222E">try</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">/* ... */</span></span>
 <span class="line"><span style="color:#24292F">} </span><span style="color:#CF222E">catch</span><span style="color:#24292F">(</span><span style="color:#953800">err</span><span style="color:#CF222E">:</span><span style="color:#24292F"> </span><span style="color:#953800">unkown</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// err needs to be casted</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">errCasted</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> (err </span><span style="color:#CF222E">as</span><span style="color:#24292F"> </span><span style="color:#953800">ValidationError</span><span style="color:#24292F"> </span><span style="color:#CF222E">|</span><span style="color:#24292F"> </span><span style="color:#953800">SomeOtherError</span><span style="color:#24292F">)</span></span>
-<span class="line"><span style="color:#24292F">}</span></span></code></pre></div><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/form-validation.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+</li>
+</ol><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/form-validation.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
         <script type="module" src="/assets/chunk-507f9034.js" defer></script>
       </body>
