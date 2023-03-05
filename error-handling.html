@@ -93,13 +93,11 @@
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
-<blockquote>
-<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation#throw-abort">Guides<!-- --> &gt; <!-- -->Form validation<!-- --> &gt; <!-- -->Throw abort</a>.</p>
-</blockquote>
+<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation#throw-abort-somevalue">Guides<!-- --> &gt; <!-- -->Form validation<!-- --> &gt; <code>throw Abort(someValue)</code></a>.</p>
 <blockquote>
 <p>We need to catch the error and use <code>throw Abort(someValue)</code> because Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend (in order to avoid leaking sensitive information).</p>
 </blockquote>
+<p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
 <br/>
 <p><strong>2. Handle the error on the server-side.</strong></p>
 <p>We can handle the thrown error at our Telefunc server middleware:</p>
