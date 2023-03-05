@@ -73,7 +73,7 @@
 <span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">validate</span><span style="color:#24292F">(data)</span></span>
 <span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">catch</span><span style="color:#24292F">(err) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">      errorMessage: </span><span style="color:#0A3069">&#x27;Data is invalid. Please enter valid data.&#x27;</span></span>
+<span class="line"><span style="color:#24292F">      errorMessage: </span><span style="color:#0A3069">`Data is invalid: ${</span><span style="color:#24292F">err</span><span style="color:#0A3069">.</span><span style="color:#24292F">message</span><span style="color:#0A3069">}. Please enter valid data.`</span></span>
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
@@ -87,11 +87,13 @@
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">throw</span><span style="color:#24292F"> </span><span style="color:#8250DF">Abort</span><span style="color:#24292F">({ validationError: </span><span style="color:#0A3069">&#x27;Data is invalid&#x27;</span><span style="color:#24292F"> })</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
+<blockquote>
 <p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation">Guides<!-- --> &gt; <!-- -->Form validation</a>.</p>
+</blockquote>
 <blockquote>
 <p>We need to catch the error and use a <code>throw Abort(someValue)</code> instead because Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend (in order to avoid leaking sensitive information).</p>
 </blockquote>
-<p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
 <br/>
 <p><strong>2. Handle the error on the server-side.</strong></p>
 <p>We can handle the thrown error at our Telefunc server middleware:</p>
