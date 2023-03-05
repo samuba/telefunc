@@ -31,7 +31,7 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// This telefunction has a bug: it should be `name` instead of `namee`</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;Hello &#x27;</span><span style="color:#24292F"> </span><span style="color:#CF222E">+</span><span style="color:#24292F"> namee</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>Then telefunction calls throw an error:</p>
+<p>Then a telefunction call throws an error:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="html" data-theme="default"><code data-language="html" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- index.html --&gt;</span></span>
 <span class="line"><span style="color:#6E7781">&lt;!-- Environment: Browser --&gt;</span></span>
 <span class="line"></span>
@@ -49,13 +49,25 @@
 <span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">script</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/</span><span style="color:#116329">body</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">&lt;/</span><span style="color:#116329">html</span><span style="color:#24292F">&gt;</span></span></code></pre></div>
-<p>To avoid leaking sensitive information, Telefunc doesn&#x27;t send the original <code>Error</code> to the frontend.</p>
 <blockquote>
-<p>For expected errors, such as authentication and validation errors, we can propagate error information to the frontend by using <code>throw Abort(someValue)</code>, see for example <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
+<p>To avoid leaking sensitive information, Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend.</p>
 </blockquote>
 <h2 id="expected-errors">Expected Errors</h2>
 <p>An error thrown by a telefunction may not be a bug but an expected error instead.</p>
-<p>For example, some authentication libraries throw an error if the user isn&#x27;t logged in. We can handle the error thrown by such library in our Telefunc server middleware:</p>
+<p>For example:</p>
+<ul>
+<li>Some authentication libraries throw an error if the user isn&#x27;t logged in.</li>
+<li>Some validation libraries throw errors upon invalid data.</li>
+</ul>
+<p>We can:</p>
+<ol>
+<li>Propagate the error to the frontend.</li>
+<li>Handle the error on the server-side.</li>
+</ol>
+<p><strong>1. Propagate the error to the frontend.</strong></p>
+<p>We can propagate error information to the frontend by using <code>throw Abort(someValue)</code>, see for example <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
+<p><strong>2. Handle the error on the server-side.</strong></p>
+<p>We can handle the thrown error at our Telefunc server middleware:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Server (Express.js/Fastify/...)</span></span>
