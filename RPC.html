@@ -172,10 +172,12 @@ Telefunc transforms <code>hello.telefunc.js</code> into the following:</p>
 </li>
 <li>On the server-side, our Telefunc middleware:<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { createTelefunc } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Server middleware (Express.js/Fastify/Koa/Hapi/...)</span></span>
-<span class="line"><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">telefunc</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">createTelefunc</span><span style="color:#24292F">()</span></span>
+<span class="line"><span style="color:#6E7781">// Server (Express.js/Fastify/...)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { telefunc } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Telefunc middleware</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">use</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/_telefunc&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">httpResponse</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">telefunc</span><span style="color:#24292F">(req)</span></span>
 <span class="line"><span style="color:#24292F">  res.</span><span style="color:#8250DF">send</span><span style="color:#24292F">(httpResponse.body)</span></span>

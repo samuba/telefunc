@@ -33,9 +33,11 @@
 <p>Before we can use <code>getContext()</code>, we need to provide the contex` object to <a href="/telefunc">Telefunc&#x27;s Server Middleware</a>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Server (Express.js/Fastify/...)</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { telefunc } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;telefunc&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Server (Express.js/Fastify/Koa/Hapi/...)</span></span>
+<span class="line"><span style="color:#6E7781">// Telefunc middleware</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">all</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/_telefunc&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Authentication middlewares (e.g. Passport.js or Grant) usually provide information</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// about the logged-in user on the `req` object.</span></span>
