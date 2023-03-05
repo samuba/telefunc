@@ -66,7 +66,32 @@
 </ol>
 <br/>
 <p><strong>1. Propagate the error to the frontend.</strong></p>
-<p>We can propagate error information to the frontend by using <code>throw Abort(someValue)</code>, see for example <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
+<p>We can propagate error information to the frontend like this:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { validate } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-library&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onFromSubmit</span><span style="color:#24292F">(</span><span style="color:#953800">data</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">try</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">validate</span><span style="color:#24292F">(data)</span></span>
+<span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">catch</span><span style="color:#24292F">(err) {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">      errorMessage: </span><span style="color:#0A3069">&#x27;Data is invalid. Please enter valid data.&#x27;</span></span>
+<span class="line"><span style="color:#24292F">    }</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>We can also use <code>throw Abort(someValue)</code>:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { validate } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-library&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onFromSubmit</span><span style="color:#24292F">(</span><span style="color:#953800">data</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">try</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">validate</span><span style="color:#24292F">(data)</span></span>
+<span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">catch</span><span style="color:#24292F">(err) {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// In general, we recommend using `throw</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">throw</span><span style="color:#24292F"> </span><span style="color:#8250DF">Abort</span><span style="color:#24292F">({ validationError: </span><span style="color:#0A3069">&#x27;Data is invalid&#x27;</span><span style="color:#24292F"> })</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation">Guides<!-- --> &gt; <!-- -->Form validation</a>.</p>
+<blockquote>
+<p>We need to catch the error and use a <code>throw Abort(someValue)</code> instead because Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend (in order to avoid leaking sensitive information).</p>
+</blockquote>
+<p>Also see <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
 <br/>
 <p><strong>2. Handle the error on the server-side.</strong></p>
 <p>We can handle the thrown error at our Telefunc server middleware:</p>

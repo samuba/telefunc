@@ -299,6 +299,10 @@
     "file": "assets/index.page.client.a95a6883.css",
     "src": "pages/index/index.page.client.css"
   },
+  "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.0a0506d2.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
+  },
   "pages/index/index.page.server.tsx?extractAssets&lang.css": {
     "file": "assets/index.page.server.6c2d1ceb.css",
     "src": "pages/index/index.page.server.tsx?extractAssets&lang.css"
@@ -306,9 +310,5 @@
   "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
     "file": "assets/_default.page.server.87aca110.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.0a0506d2.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.3.9_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   }
 }
