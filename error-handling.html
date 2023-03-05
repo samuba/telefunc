@@ -93,7 +93,7 @@
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see <a href="/form-validation#throw-abort-somevalue">Guides<!-- --> &gt; <!-- -->Form validation<!-- --> &gt; <code>throw Abort(someValue)</code></a>.</p>
+<p>In general, we recommend using <code>return { someValue }</code> instead of <code>throw Abort(someValue)</code>, see explanation at <a href="/form-validation#throw-abort-somevalue">Guides<!-- --> &gt; <!-- -->Form validation<!-- --> &gt; <code>throw Abort(someValue)</code></a>.</p>
 <blockquote>
 <p>We need to catch the error and use <code>throw Abort(someValue)</code> because Telefunc doesn&#x27;t send the original <code>Error</code> object to the frontend (in order to avoid leaking sensitive information).</p>
 </blockquote>
