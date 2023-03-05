@@ -64,8 +64,10 @@
 <li>Propagate the error to the frontend, or</li>
 <li>handle the error on the server-side.</li>
 </ol>
+<br/>
 <p><strong>1. Propagate the error to the frontend.</strong></p>
 <p>We can propagate error information to the frontend by using <code>throw Abort(someValue)</code>, see for example <a href="/permissions#getcontext-wrapping">Guides<!-- --> &gt; <!-- -->Permissions<!-- --> &gt; <code>getContext()</code> wrapping</a>.</p>
+<br/>
 <p><strong>2. Handle the error on the server-side.</strong></p>
 <p>We can handle the thrown error at our Telefunc server middleware:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
