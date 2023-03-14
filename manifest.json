@@ -299,6 +299,10 @@
     "file": "assets/static/pages/index/index.page.client.a95a6883.css",
     "src": "pages/index/index.page.client.css"
   },
+  "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
+    "file": "assets/static/../nodemodules/.pnpm/@brilloutdocpress@0.3.13se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/renderer/default.page.client.8321a36b.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
+  },
   "pages/index/index.page.server.tsx?extractAssets&lang.css": {
     "file": "assets/static/pages/index/index.page.server.6c2d1ceb.css",
     "src": "pages/index/index.page.server.tsx?extractAssets&lang.css"
@@ -306,9 +310,5 @@
   "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
     "file": "assets/static/../nodemodules/.pnpm/@brilloutdocpress@0.3.13se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/renderer/default.page.server.90278859.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
-    "file": "assets/static/../nodemodules/.pnpm/@brilloutdocpress@0.3.13se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/renderer/default.page.client.8321a36b.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.3.13_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   }
 }
