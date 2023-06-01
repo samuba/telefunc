@@ -1,314 +1,347 @@
 {
   "icons/telefunc.svg": {
-    "file": "assets/static//home/runner/work/telefunc/telefunc/docs/icons/telefunc.6a5581b5.svg",
+    "file": "assets/static/telefunc.6a5581b5.svg",
     "src": "icons/telefunc.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg": {
-    "file": "assets/static//home/runner/work/telefunc/telefunc/nodemodules/.pnpm/@brilloutdocpress@0.4.2se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/chevron-K3WPYLOP.38e8d76a.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg"
+  "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg": {
+    "file": "assets/static/chevron-K3WPYLOP.38e8d76a.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf": {
-    "file": "assets/static//home/runner/work/telefunc/telefunc/nodemodules/.pnpm/@brilloutdocpress@0.4.2se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/Inter-Var-IOAEQULN.2bc54814.ttf",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf"
+  "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf": {
+    "file": "assets/static/Inter-Var-IOAEQULN.2bc54814.ttf",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf"
+  },
+  "pages/Abort.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_Abort.page.server.extractAssets.2c8a36e8.js",
+    "src": "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_RPC-vs-GraphQL-REST.page.server.extractAssets.146ef88f.js",
+    "src": "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/RPC.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_RPC.page.server.extractAssets.94851276.js",
+    "src": "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_abort-vs-error.page.server.extractAssets.bf1d72c8.js",
+    "src": "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_babel-plugin.page.server.extractAssets.ffb96cdc.js",
+    "src": "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_disableNamingConvention.page.server.extractAssets.b5d5e3de.js",
+    "src": "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/error-handling.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_error-handling.page.server.extractAssets.f49b155c.js",
+    "src": "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/event-based.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_event-based.page.server.extractAssets.fe4b8ad3.js",
+    "src": "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/file-upload.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_file-upload.page.server.extractAssets.f4fe24b0.js",
+    "src": "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/form-validation.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_form-validation.page.server.extractAssets.42d06878.js",
+    "src": "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/getContext.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_getContext.page.server.extractAssets.cf700e11.js",
+    "src": "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_httpHeaders.page.server.extractAssets.3a3117b1.js",
+    "src": "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/initial-data.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_initial-data.page.server.extractAssets.a00c1005.js",
+    "src": "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_initial-page-data.page.server.extractAssets.d0a9fff7.js",
+    "src": "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/install.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_install.page.server.extractAssets.b73144c1.js",
+    "src": "pages/install.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/next.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_next.page.server.extractAssets.8d07d334.js",
+    "src": "pages/next.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/nuxt.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_nuxt.page.server.extractAssets.faf40409.js",
+    "src": "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/onAbort.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_onAbort.page.server.extractAssets.ec43d533.js",
+    "src": "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/onBug.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_onBug.page.server.extractAssets.b1aff30c.js",
+    "src": "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/permissions.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_permissions.page.server.extractAssets.ed2b6abc.js",
+    "src": "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/react-native.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_react-native.page.server.extractAssets.3a40cf4d.js",
+    "src": "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/root.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_root.page.server.extractAssets.3770f2d9.js",
+    "src": "pages/root.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/shield.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_shield.page.server.extractAssets.aaeb76d5.js",
+    "src": "pages/shield.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_svelte-kit.page.server.extractAssets.eaad9149.js",
+    "src": "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/telefunc.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_telefunc.page.server.extractAssets.ce496938.js",
+    "src": "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_telefuncFiles.page.server.extractAssets.9a7c4577.js",
+    "src": "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_telefuncUrl.page.server.extractAssets.414b49d7.js",
+    "src": "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/transformer.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_transformer.page.server.extractAssets.3cadfa35.js",
+    "src": "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vite-plugin-ssr.page.server.extractAssets.9ebf0769.js",
+    "src": "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vite-plugin.page.server.extractAssets.52c4a19c.js",
+    "src": "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/vite.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vite.page.server.extractAssets.0eaa89b9.js",
+    "src": "pages/vite.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_webpack-plugin.page.server.extractAssets.9b13f6be.js",
+    "src": "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.681a9761.js",
+    "file": "assets/entries/pages_index_index.page.client.87164399.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_e5d1a6dd.js"
+      "_chunk-1f604618.js"
     ],
     "css": [
-      "assets/static/pages/index/index.page.client.a95a6883.css"
+      "assets/static/index.page.client.a95a6883.css"
     ]
-  },
-  "../node_modules/.pnpm/vite-plugin-ssr@0.4.110_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.d357e991.js",
-    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.110_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
-    "isEntry": true,
-    "imports": [
-      "_0886ddd2.js"
-    ],
-    "dynamicImports": [
-      "pages/index/index.page.client.ts",
-      "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
-      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
-      "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
-      "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
-      "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
-      "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
-      "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
-      "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
-      "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
-      "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
-      "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
-      "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
-      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
-      "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
-      "pages/install.page.server.mdx?extractAssets&lang.mdx",
-      "pages/next.page.server.mdx?extractAssets&lang.mdx",
-      "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
-      "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
-      "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
-      "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
-      "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
-      "pages/root.page.server.mdx?extractAssets&lang.mdx",
-      "pages/shield.page.server.mdx?extractAssets&lang.mdx",
-      "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
-      "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite.page.server.mdx?extractAssets&lang.mdx",
-      "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
-    ]
-  },
-  "../node_modules/.pnpm/vite-plugin-ssr@0.4.110_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.564969f2.js",
-    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.110_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
-    "isEntry": true,
-    "imports": [
-      "_0886ddd2.js"
-    ],
-    "dynamicImports": [
-      "pages/index/index.page.client.ts",
-      "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
-      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
-      "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
-      "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
-      "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
-      "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
-      "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
-      "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
-      "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
-      "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
-      "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
-      "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
-      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
-      "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
-      "pages/install.page.server.mdx?extractAssets&lang.mdx",
-      "pages/next.page.server.mdx?extractAssets&lang.mdx",
-      "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
-      "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
-      "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
-      "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
-      "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
-      "pages/root.page.server.mdx?extractAssets&lang.mdx",
-      "pages/shield.page.server.mdx?extractAssets&lang.mdx",
-      "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
-      "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
-      "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "pages/vite.page.server.mdx?extractAssets&lang.mdx",
-      "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
-      "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
-    ]
-  },
-  "_e5d1a6dd.js": {
-    "file": "assets/chunks/e5d1a6dd.js"
-  },
-  "_0886ddd2.js": {
-    "file": "assets/chunks/0886ddd2.js"
-  },
-  "pages/Abort.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a.js",
-    "src": "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a2.js",
-    "src": "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/RPC.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a3.js",
-    "src": "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a4.js",
-    "src": "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a5.js",
-    "src": "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a6.js",
-    "src": "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/error-handling.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a7.js",
-    "src": "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/event-based.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a8.js",
-    "src": "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/file-upload.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a9.js",
-    "src": "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/form-validation.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a10.js",
-    "src": "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/getContext.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a11.js",
-    "src": "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a12.js",
-    "src": "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
   },
   "pages/index/index.page.server.tsx?extractAssets&lang.tsx": {
-    "file": "assets/chunks/fcdaaede.js",
+    "file": "assets/entries/pages_index_index.page.server.extractAssets.ba762cf2.js",
     "src": "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+    "isEntry": true,
     "isDynamicEntry": true,
     "css": [
-      "assets/static/pages/index/index.page.server.6c2d1ceb.css"
+      "assets/static/index.page.server.6c2d1ceb.css"
     ]
   },
-  "pages/initial-data.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a13.js",
-    "src": "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "file": "assets/entries/entry-client-routing.4ffac00d.js",
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-585083ca.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.client.ts",
+      "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
+      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
+      "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
+      "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
+      "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
+      "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
+      "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
+      "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
+      "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
+      "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
+      "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
+      "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
+      "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
+      "pages/install.page.server.mdx?extractAssets&lang.mdx",
+      "pages/next.page.server.mdx?extractAssets&lang.mdx",
+      "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
+      "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
+      "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
+      "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
+      "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
+      "pages/root.page.server.mdx?extractAssets&lang.mdx",
+      "pages/shield.page.server.mdx?extractAssets&lang.mdx",
+      "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
+      "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite.page.server.mdx?extractAssets&lang.mdx",
+      "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
+    ]
   },
-  "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a14.js",
-    "src": "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "file": "assets/entries/entry-server-routing.3ad79fef.js",
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_wng26z4qkjffcsqt2mctt2vqpe/node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-585083ca.js"
+    ],
+    "dynamicImports": [
+      "pages/index/index.page.client.ts",
+      "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
+      "pages/RPC-vs-GraphQL-REST.page.server.mdx?extractAssets&lang.mdx",
+      "pages/RPC.page.server.mdx?extractAssets&lang.mdx",
+      "pages/abort-vs-error.page.server.mdx?extractAssets&lang.mdx",
+      "pages/babel-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "pages/disableNamingConvention.page.server.mdx?extractAssets&lang.mdx",
+      "pages/error-handling.page.server.mdx?extractAssets&lang.mdx",
+      "pages/event-based.page.server.mdx?extractAssets&lang.mdx",
+      "pages/file-upload.page.server.mdx?extractAssets&lang.mdx",
+      "pages/form-validation.page.server.mdx?extractAssets&lang.mdx",
+      "pages/getContext.page.server.mdx?extractAssets&lang.mdx",
+      "pages/httpHeaders.page.server.mdx?extractAssets&lang.mdx",
+      "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+      "pages/initial-data.page.server.mdx?extractAssets&lang.mdx",
+      "pages/initial-page-data.page.server.mdx?extractAssets&lang.mdx",
+      "pages/install.page.server.mdx?extractAssets&lang.mdx",
+      "pages/next.page.server.mdx?extractAssets&lang.mdx",
+      "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
+      "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
+      "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
+      "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
+      "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
+      "pages/root.page.server.mdx?extractAssets&lang.mdx",
+      "pages/shield.page.server.mdx?extractAssets&lang.mdx",
+      "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
+      "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
+      "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "pages/vite.page.server.mdx?extractAssets&lang.mdx",
+      "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
+      "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
+    ]
   },
-  "pages/install.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a15.js",
-    "src": "pages/install.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
+  "_chunk-1f604618.js": {
+    "file": "assets/chunks/chunk-1f604618.js"
   },
-  "pages/next.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a16.js",
-    "src": "pages/next.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
+  "_chunk-585083ca.js": {
+    "file": "assets/chunks/chunk-585083ca.js"
   },
-  "pages/nuxt.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a17.js",
-    "src": "pages/nuxt.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/onAbort.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a18.js",
-    "src": "pages/onAbort.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/onBug.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a19.js",
-    "src": "pages/onBug.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/permissions.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a20.js",
-    "src": "pages/permissions.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/react-native.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a21.js",
-    "src": "pages/react-native.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/root.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a22.js",
-    "src": "pages/root.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/shield.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a23.js",
-    "src": "pages/shield.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a24.js",
-    "src": "pages/svelte-kit.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/telefunc.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a25.js",
-    "src": "pages/telefunc.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a26.js",
-    "src": "pages/telefuncFiles.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a27.js",
-    "src": "pages/telefuncUrl.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/transformer.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a28.js",
-    "src": "pages/transformer.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a29.js",
-    "src": "pages/vite-plugin-ssr.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a30.js",
-    "src": "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/vite.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a31.js",
-    "src": "pages/vite.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/chunks/9c4cb81a32.js",
-    "src": "pages/webpack-plugin.page.server.mdx?extractAssets&lang.mdx",
-    "isDynamicEntry": true
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js": {
-    "file": "assets/chunks/b2fef168.js",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
+  "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js": {
+    "file": "assets/chunks/chunk-97f99950.js",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
     "isDynamicEntry": true,
     "imports": [
-      "_e5d1a6dd.js"
+      "_chunk-1f604618.js"
     ]
   },
   "pages/index/index.page.client.css": {
-    "file": "assets/static/pages/index/index.page.client.a95a6883.css",
+    "file": "assets/static/index.page.client.a95a6883.css",
     "src": "pages/index/index.page.client.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
-    "file": "assets/static/../nodemodules/.pnpm/@brilloutdocpress@0.4.2se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/renderer/default.page.client.dc92b9f0.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
-  },
   "pages/index/index.page.server.tsx?extractAssets&lang.css": {
-    "file": "assets/static/pages/index/index.page.server.6c2d1ceb.css",
+    "file": "assets/static/index.page.server.6c2d1ceb.css",
     "src": "pages/index/index.page.server.tsx?extractAssets&lang.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
-    "file": "assets/static/../nodemodules/.pnpm/@brilloutdocpress@0.4.2se7lxagkunlp4luyiouooh4dii/nodemodules/@brillout/docpress/dist/renderer/default.page.server.c4e72292.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.2_se7lxagkunlp4luyiouooh4dii/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
+    "file": "assets/static/default.page.server.8705f044.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
+    "file": "assets/static/default.page.client.d7c7cf76.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_mvvjsnjpryd72ctnk2n4ydobdm/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   }
 }
