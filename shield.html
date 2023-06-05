@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.d7c7cf76.css">
+        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.af8f5e5a.css">
         <link rel="stylesheet" type="text/css" href="/assets/static/default.page.server.8705f044.css">
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/static/telefunc.6a5581b5.svg" />
@@ -113,6 +113,6 @@ telefunctions are public and need protection.)</p>
 <p>List of <code>shield()</code> types:</p>
 <table><thead><tr><th><code>const t = shield.type</code></th><th>TypeScript</th><th>JavaScript</th></tr></thead><tbody><tr><td><code>t.string</code></td><td><code>string</code></td><td><code>typeof value === &#x27;string&#x27;</code></td></tr><tr><td><code>t.number</code></td><td><code>number</code></td><td><code>typeof value === &#x27;number&#x27;</code></td></tr><tr><td><code>t.boolean</code></td><td><code>boolean</code></td><td><code>value === true || value === false</code></td></tr><tr><td><code>t.date</code></td><td><code>Date</code></td><td><code>value.constructor === Date</code></td></tr><tr><td><code>t.array(T)</code></td><td><code>T[]</code></td><td><code>value.every(element =&gt; isT(element))</code></td></tr><tr><td><code>t.object(T)</code></td><td><code>Record&lt;string, T&gt;</code></td><td><code>Object.values(value).every(v =&gt; isT(v))</code></td></tr><tr><td><code>{ k1: T1, k2: T2, ... }</code></td><td><code>{ k1: T1, k2: T2, ... }</code></td><td><code>isT1(value.k1) &amp;&amp; isT2(value.k2) &amp;&amp; ...</code></td></tr><tr><td><code>t.or(T1, T2, ...)</code></td><td><code>T1 | T2 | ...</code></td><td><code>isT1(value) || isT2(value) || ...</code></td></tr><tr><td><code>t.tuple(T1, T2, ...)</code></td><td><code>[T1, T2, ...]</code></td><td><code>isT1(value[0]) &amp;&amp; isT2(value[1]) &amp;&amp; ...</code></td></tr><tr><td><code>t.const(val)</code></td><td><code>val as const</code></td><td><code>value === val</code></td></tr><tr><td><code>t.optional(T)</code></td><td><code>T | undefined</code></td><td><code>isT(value) || value === undefined</code></td></tr><tr><td><code>t.nullable(T)</code></td><td><code>T | null</code></td><td><code>isT(value) || value === null</code></td></tr><tr><td><code>t.any</code></td><td><code>any</code></td><td><code>true</code></td></tr></tbody></table><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/edit/main/docs/pages/shield.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
-        <script type="module" src="/assets/chunks/chunk-97f99950.js" defer></script>
+        <script type="module" src="/assets/chunks/chunk-2875d31b.js" defer></script>
       </body>
     </html>
