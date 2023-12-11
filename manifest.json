@@ -23,7 +23,7 @@
     "file": "assets/static/default.page.server.e70d4382.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.5.4_@types+node@17.0.16_react-dom@18.2.0_react@18.2.0_rollup@2.79.1/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
   },
-  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_react-streaming@0.3.5_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
     "dynamicImports": [
       "pages/index/index.page.client.ts",
       "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
@@ -66,9 +66,9 @@
       "_chunk-45d9550c.js"
     ],
     "isEntry": true,
-    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_react-streaming@0.3.5_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/entry.js"
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/entry.js"
   },
-  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_react-streaming@0.3.5_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+  "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
     "dynamicImports": [
       "pages/index/index.page.client.ts",
       "pages/Abort.page.server.mdx?extractAssets&lang.mdx",
@@ -111,7 +111,7 @@
       "_chunk-45d9550c.js"
     ],
     "isEntry": true,
-    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_react-streaming@0.3.5_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
+    "src": "../node_modules/.pnpm/vite-plugin-ssr@0.4.131_vite@4.3.9/node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
   "_chunk-45d9550c.js": {
     "file": "assets/chunks/chunk-45d9550c.js"
