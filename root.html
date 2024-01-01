@@ -21,7 +21,7 @@
 <span class="line"><span style="color:#6E7781">// The project&#x27;s root directory</span></span>
 <span class="line"><span style="color:#24292F">config.root </span><span style="color:#CF222E">=</span><span style="color:#24292F"> __dirname</span></span></code></pre></div>
 <blockquote>
-<p>If you have a monorepo structure, then set <code>config.root</code> to the root directory of your client-side (i.e. the root of Vite/Vike/Next.js/Nuxt/...), otherwise Telefunc will not be able to match your <code>.telefunc.js</code> files/imports between the server-side and the client-side.</p>
+<p>If you have a monorepo structure, then set <code>config.root</code> to the root directory of your client-side (i.e. the root of Vite/Vike/Next.js/Nuxt/...). Don&#x27;t set <code>config.root</code> to the monorepo root, nor to the root directory of your server. (The <code>config.root</code> setting enables Telefunc to match your <code>.telefunc.js</code> files/imports between the server-side and the client-side.)</p>
 </blockquote>
 <p>It&#x27;s only needed if you use <a href="/telefuncFiles"><code>config.telefuncFiles</code></a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/telefunc/tree/main/docs/pages/root.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
