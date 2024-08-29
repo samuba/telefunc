@@ -26,7 +26,7 @@
 <h2 id="basic-example">Basic example</h2>
 <p>Telefunc enables functions defined on the server-side to be called remotely from the browser-side.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// hello.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { hello }</span></span>
 <span data-line=""> </span>
@@ -36,7 +36,7 @@
 <span data-line=""><span style="color:#D73A49">  return</span><span style="color:#24292E"> { message }</span></span>
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="html" data-theme="github-light"><code data-language="html" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">&lt;!-- index.html --&gt;</span></span>
-<span data-line=""><span style="color:#6A737D">&lt;!-- Environment: Browser --&gt;</span></span>
+<span data-line=""><span style="color:#6A737D">&lt;!-- Environment: client --&gt;</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#24292E">&lt;</span><span style="color:#22863A">html</span><span style="color:#24292E">&gt;</span></span>
 <span data-line=""><span style="color:#24292E">  &lt;</span><span style="color:#22863A">body</span><span style="color:#24292E">&gt;</span></span>
@@ -60,7 +60,7 @@
 <h2 id="orm-sql">ORM &amp; SQL</h2>
 <p>As we have seen in the previous section, telefunctions always run on the server-side and can therefore use server utilities such as SQL and ORMs.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// TodoList.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { onLoad }</span></span>
 <span data-line=""> </span>
@@ -76,7 +76,7 @@
 <p><code>.telefunc.js</code> files are guaranteed to be loaded only on the server-side. You can therefore save secret information, such as the database passwords, in <code>.telefunc.js</code> files.</p>
 </blockquote>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="jsx" data-theme="github-light"><code data-language="jsx" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// TodoList.jsx</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Browser</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: client</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#6A737D">// This doesn&#x27;t actually load CreateTodo.telefunc.js which we&#x27;ll explain in the next section</span></span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { onLoad } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;./TodoList.telefunc.js&#x27;</span></span>
@@ -98,7 +98,7 @@
 </blockquote>
 <p>Telefunctions can also be used to mutate data:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// CreateTodo.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { onNewTodo }</span></span>
 <span data-line=""> </span>
@@ -118,7 +118,7 @@
 <span data-line=""><span style="color:#24292E">  )</span></span>
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="jsx" data-theme="github-light"><code data-language="jsx" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// CreateTodo.jsx</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Browser</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: client</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { onNewTodo } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;./CreateTodo.telefunc.js&#x27;</span></span>
 <span data-line=""> </span>
@@ -150,7 +150,7 @@
 </blockquote>
 <p>Let&#x27;s see what happens when a telefunction is called.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// hello.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { hello }</span></span>
 <span data-line=""> </span>
@@ -158,7 +158,7 @@
 <span data-line=""><span style="color:#D73A49">  const</span><span style="color:#005CC5"> message</span><span style="color:#D73A49"> =</span><span style="color:#032F62"> &#x27;Welcome &#x27;</span><span style="color:#D73A49"> +</span><span style="color:#24292E"> name</span></span>
 <span data-line=""><span style="color:#D73A49">  return</span><span style="color:#24292E"> { message }</span></span>
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
-<figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// Environment: Browser</span></span>
+<figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// Environment: client</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { hello } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;./hello.telefunc.js&#x27;</span></span>
 <span data-line=""> </span>
@@ -215,7 +215,7 @@ while the browser-side can remotely call it in a seamless fashion.</p>
 <span data-line=""><span style="color:#032F62"> }&#x27;</span></span></code></pre></figure>
 <p>Thus, such telefunction is problematic:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// sql.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#6A737D">// run() is public: it can be called by anyone</span></span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { run }</span></span>
@@ -234,7 +234,7 @@ anyone can make this HTTP request:</p>
 <p>As we&#x27;ve seen in the previous section,
 the following telefunction isn&#x27;t safe.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// run.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#6A737D">// run() is public: it can be called by anyone</span></span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { run }</span></span>
@@ -244,7 +244,7 @@ the following telefunction isn&#x27;t safe.</p>
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
 <p>But we can use <code>throw Abort()</code> to protect it:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// run.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#6A737D">// run() is public: it can be called by anyone</span></span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { run }</span></span>
@@ -264,7 +264,7 @@ the following telefunction isn&#x27;t safe.</p>
 </blockquote>
 <p>We can use <code>throw Abort()</code> to avoid any forbidden telefunction call.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// TodoList.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#24292E"> { onLoad }</span></span>
 <span data-line=""> </span>
@@ -292,7 +292,7 @@ We talk more about permissions at <a href="/permissions">Guides<!-- --> &gt; <!-
 <h2 id="shield"><code>shield()</code></h2>
 <p>Since telefunctions are public and can be called by anyone, we cannot assuming anything about arguments. We can use <code>throw Abort()</code> to ensure the type of telefunction arguments:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// CreateTodo.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#D73A49"> async</span><span style="color:#D73A49"> function</span><span style="color:#6F42C1"> onNewTodo</span><span style="color:#24292E">(</span><span style="color:#E36209">text</span><span style="color:#24292E">) {</span></span>
 <span data-line=""><span style="color:#6A737D">  // ❌ This may throw:</span></span>
@@ -311,7 +311,7 @@ We talk more about permissions at <a href="/permissions">Guides<!-- --> &gt; <!-
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
 <p>For more convenience, we can use <code>shield()</code> instead:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// CreateTodo.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { shield } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;telefunc&#x27;</span></span>
 <span data-line=""><span style="color:#D73A49">const</span><span style="color:#005CC5"> t</span><span style="color:#D73A49"> =</span><span style="color:#24292E"> shield.type</span></span>
@@ -321,7 +321,7 @@ We talk more about permissions at <a href="/permissions">Guides<!-- --> &gt; <!-
 <span data-line=""><span style="color:#6A737D">  // ...</span></span>
 <span data-line=""><span style="color:#24292E">}</span></span></code></pre></figure>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// CreateTodo.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { shield } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;telefunc&#x27;</span></span>
 <span data-line=""><span style="color:#D73A49">const</span><span style="color:#005CC5"> t</span><span style="color:#D73A49"> =</span><span style="color:#24292E"> shield.type</span></span>
@@ -335,7 +335,7 @@ We talk more about permissions at <a href="/permissions">Guides<!-- --> &gt; <!-
 <p>Any of your telefunctions can be called by anyone, at any time, and with any arguments. One way to think about it is that any random telefunction call can happen at any time.</p>
 <p>You should always protect your telefunctions, even when your frontend calls a telefunction only in a certain way. For example:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="jsx" data-theme="github-light"><code data-language="jsx" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// Comment.jsx</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Browser</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: client</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { onDelete } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;./Comment.telefunc.js&#x27;</span></span>
 <span data-line=""> </span>
@@ -351,7 +351,7 @@ We talk more about permissions at <a href="/permissions">Guides<!-- --> &gt; <!-
 <p>Because the frontend shows the delete button only to admins, we can assume the user to be an admin whenever the frontend calls <code>onDelete()</code>.
 But we still need to use <code>throw Abort()</code> in order to protect the telefunction against calls that don&#x27;t originate from the frontend.</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="js" data-theme="github-light"><code data-language="js" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// Comment.telefunc.js</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { getContext, Abort, shield } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;telefunc&#x27;</span></span>
 <span data-line=""> </span>

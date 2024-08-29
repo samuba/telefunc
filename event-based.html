@@ -42,7 +42,7 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <p>This is inefficient as the app does <code>N+1</code> requests, where <code>N</code> is the number of tasks that needs to be updated.</p>
 <p>With Telefunc, you can do this instead:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="ts" data-theme="github-light"><code data-language="ts" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// TodoList.telefunc.ts</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Server</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: server</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">export</span><span style="color:#D73A49"> async</span><span style="color:#D73A49"> function</span><span style="color:#6F42C1"> onMarkAllAsCompleted</span><span style="color:#24292E">() {</span></span>
 <span data-line=""><span style="color:#6A737D">  // With SQL</span></span>
@@ -66,7 +66,7 @@ POST            https://api.todo.com/task/7                   { &quot;completed&
 <p>Thus, in general, we recommend implementing telefunctions that are tailored instead of generic.</p>
 <p>We recommend naming telefunctions <code>onSomeEvent()</code> since they are usually triggered by some kind of event. For example, the telefunction <code>onMarkAllAsCompleted()</code> is triggered by the user clicking on a button:</p>
 <figure data-rehype-pretty-code-figure=""><pre style="background-color:#fff;color:#24292e" tabindex="0" data-language="tsx" data-theme="github-light"><code data-language="tsx" data-theme="github-light" style="display:grid"><span data-line=""><span style="color:#6A737D">// TodoList.tsx</span></span>
-<span data-line=""><span style="color:#6A737D">// Environment: Browser</span></span>
+<span data-line=""><span style="color:#6A737D">// Environment: client</span></span>
 <span data-line=""> </span>
 <span data-line=""><span style="color:#D73A49">import</span><span style="color:#24292E"> { onMarkAllAsCompleted } </span><span style="color:#D73A49">from</span><span style="color:#032F62"> &#x27;./TodoList.telefunc.ts&#x27;</span></span>
 <span data-line=""> </span>
